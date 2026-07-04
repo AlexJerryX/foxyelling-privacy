@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fox yelling - 隐私权政策</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.8; }
+    h1 { color: #1a1a1a; }
+    h2 { color: #444; margin-top: 2em; }
+    .updated { color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>Fox yelling 隐私权政策</h1>
+  <p class="updated">最后更新：2025年7月3日</p>
+
+  <h2>一、概述</h2>
+  <p>Fox yelling 是一款 Chrome 浏览器扩展，用于检测用户在使用 AI 平台时是否输入了敏感数据（如手机号、身份证号、银行卡号、API Key 等），并给予实时警告。我们高度重视用户隐私。</p>
+
+  <h2>二、数据收集</h2>
+  <p>Fox yelling <strong>不收集、不传输、不存储</strong>任何用户在 AI 平台中输入的内容。所有敏感数据检测均在用户本地设备上完成，检测结果不会离开用户设备。</p>
+
+  <h2>三、本地存储</h2>
+  <p>扩展使用 Chrome storage API 在本地存储以下信息：</p>
+  <ul>
+    <li>检测规则缓存（从我方服务器拉取的 JSON 配置，不含用户数据）</li>
+    <li>用户偏好设置（如警告级别、功能开关状态）</li>
+    <li>匿名触发统计计数（仅本地累计，不上传）</li>
+  </ul>
+
+  <h2>四、网络请求</h2>
+  <p>扩展仅向以下地址发起网络请求，用于拉取最新检测规则：</p>
+  <ul>
+    <li><code>https://xhslaoren.com/api/v1/rules/*</code></li>
+  </ul>
+  <p>所有请求中均不包含用户个人信息或任何输入内容。</p>
+
+  <h2>五、权限说明</h2>
+  <ul>
+    <li><strong>activeTab</strong>：用于判断当前页面是否为受支持的 AI 平台</li>
+    <li><strong>tabs</strong>：用于监听页面切换，自动启用或停用防护</li>
+    <li><strong>storage</strong>：用于本地保存规则缓存和用户设置</li>
+    <li><strong>alarms</strong>：用于定期更新检测规则配置</li>
+    <li><strong>主机权限</strong>：用于在指定 AI 平台页面注入检测脚本</li>
+  </ul>
+
+  <h2>六、第三方共享</h2>
+  <p>我们不会将任何数据出售、出租或以任何形式共享给第三方。</p>
+
+  <h2>七、政策更新</h2>
+  <p>如本政策发生变更，我们将在本页面更新日期并公布新内容。建议定期查阅。</p>
+
+  <h2>八、联系我们</h2>
+  <p>如有任何隐私相关问题，请联系：<a href="mailto:alex2020mac@gmail.com">alex2020mac@gmail.com</a></p>
+</body>
+</html>
